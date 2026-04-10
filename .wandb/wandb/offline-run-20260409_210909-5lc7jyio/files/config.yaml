@@ -1,0 +1,103 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.14.4
+    cli_version: 0.25.1
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1775786951
+    t:
+      3:
+      - 2
+      - 4
+      - 13
+      - 16
+      - 42
+      4: 3.14.4
+      5: 0.25.1
+      8:
+      - 3
+      13: windows-amd64
+    e:
+      48f780izuznu9km18gx4hw3pqx0ckrnt:
+        os: Windows-11-10.0.26200-SP0
+        python: CPython 3.14.4
+        started_at: '2026-04-10T02:09:09.164686Z'
+        args:
+        - --input
+        - data/alice.txt
+        - --output
+        - artifacts/embeddings.txt
+        - --vocab-output
+        - artifacts/vocab.txt
+        - --metadata-output
+        - artifacts/train_metadata.json
+        - --dim
+        - '40'
+        - --window
+        - '2'
+        - --min-count
+        - '5'
+        - --epochs
+        - '2'
+        - --lr
+        - '0.03'
+        - --neg-samples
+        - '5'
+        - --max-tokens
+        - '30000'
+        - --wandb
+        - --wandb-project
+        - word2vec-local
+        - --wandb-run-name
+        - train-alice
+        program: C:\Users\mdmzaman\Documents\word2vec\train_word2vec.py
+        code_path: train_word2vec.py
+        code_path_local: train_word2vec.py
+        root: .wandb
+        host: LIB329340
+        executable: C:\Program Files\Python314\python.exe
+        cpu_count: 14
+        cpu_count_logical: 20
+        disk:
+          /:
+            total: '511987150848'
+            used: '425495003136'
+        memory:
+          total: '34031316992'
+        writer_id: 48f780izuznu9km18gx4hw3pqx0ckrnt
+input:
+  desc: null
+  value: data\alice.txt
+dim:
+  desc: null
+  value: 40
+window:
+  desc: null
+  value: 2
+min_count:
+  desc: null
+  value: 5
+epochs:
+  desc: null
+  value: 2
+learning_rate:
+  desc: null
+  value: 0.03
+neg_samples:
+  desc: null
+  value: 5
+max_tokens:
+  desc: null
+  value: 30000
+seed:
+  desc: null
+  value: 42
+vocab_size:
+  desc: null
+  value: 689
+pairs:
+  desc: null
+  value: 96998
