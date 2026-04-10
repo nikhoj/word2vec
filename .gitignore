@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+
+# Local experiment/temp directories
+.tmp/
+wandb/
+
+# W&B local logs (keep tracked configs/artifacts as needed)
+.wandb/debug-cli*.log
+.wandb/wandb/logs/
+.wandb/wandb/offline-run-*/logs/
+.wandb/wandb/offline-run-*/tmp/
+.wandb/wandb/offline-run-*/files/output.log
+.wandb/wandb/offline-run-*/files/media/
+.wandb/wandb/offline-run-*/files/wandb-metadata.json
+.wandb/wandb/offline-run-*/files/wandb-summary.json
+.wandb/wandb/offline-run-*/run-*.wandb
+.wandb/wandb/offline-run-*/run-*.wandb.synced

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="420" viewBox="0 0 840 420" role="img" aria-labelledby="title desc">
+  <title id="title">W&amp;B Train Loss Snapshot</title>
+  <desc id="desc">Training loss from offline W&amp;B logs for epochs 1 and 2.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#eef3fa"/>
+    </linearGradient>
+    <style>
+      .axis { stroke: #475569; stroke-width: 2; }
+      .grid { stroke: #cbd5e1; stroke-width: 1; }
+      .line { fill: none; stroke: #f97316; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .dot { fill: #ea580c; }
+      .label { fill: #1e293b; font: 14px 'Segoe UI', Tahoma, sans-serif; }
+      .title { fill: #0f172a; font: 700 22px 'Segoe UI', Tahoma, sans-serif; }
+      .subtitle { fill: #334155; font: 14px 'Segoe UI', Tahoma, sans-serif; }
+      .value { fill: #9a3412; font: 700 13px 'Segoe UI', Tahoma, sans-serif; }
+    </style>
+  </defs>
+  <rect width="840" height="420" fill="url(#bg)" rx="14"/>
+
+  <text x="48" y="44" class="title">Word2Vec Training Loss (W&amp;B Offline Run)</text>
+  <text x="48" y="68" class="subtitle">Run: train-alice (offline-run-20260409_210909-5lc7jyio)</text>
+
+  <!-- Plot area: left=90 right=790 top=95 bottom=340 -->
+  <line x1="90" y1="340" x2="790" y2="340" class="axis"/>
+  <line x1="90" y1="95" x2="90" y2="340" class="axis"/>
+
+  <line x1="90" y1="340" x2="790" y2="340" class="grid"/>
+  <line x1="90" y1="279" x2="790" y2="279" class="grid"/>
+  <line x1="90" y1="218" x2="790" y2="218" class="grid"/>
+  <line x1="90" y1="156" x2="790" y2="156" class="grid"/>
+  <line x1="90" y1="95" x2="790" y2="95" class="grid"/>
+
+  <!-- Y-axis labels -->
+  <text x="40" y="345" class="label">1.7</text>
+  <text x="40" y="284" class="label">1.9</text>
+  <text x="40" y="223" class="label">2.1</text>
+  <text x="40" y="161" class="label">2.3</text>
+  <text x="40" y="100" class="label">2.5</text>
+
+  <!-- X-axis labels -->
+  <text x="254" y="370" class="label">Epoch 1</text>
+  <text x="604" y="370" class="label">Epoch 2</text>
+
+  <!-- Data points: (260,102) => 2.4784 ; (620,291) => 1.8607 -->
+  <polyline points="260,102 620,291" class="line"/>
+  <circle cx="260" cy="102" r="7" class="dot"/>
+  <circle cx="620" cy="291" r="7" class="dot"/>
+
+  <text x="274" y="96" class="value">2.4784</text>
+  <text x="634" y="285" class="value">1.8607</text>
+
+  <text x="712" y="332" class="label">avg_loss</text>
+</svg>
